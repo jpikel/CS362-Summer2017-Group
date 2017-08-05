@@ -2,7 +2,11 @@
  * Group Members: Akshay Subramanian, Edward Francis, Johannes Pikel
  * Class: CS362-400
  * Date: 2017.07.28
- * Assignmnet: Final Project Part B
+ * Assignment: Final Project Part B
+ * Description: This programming tests uses a set of ResultPairs to put together a possible URL, with each component
+ * of the URL schemes, hostnames, ports, paths and queries.  Then we take all possible permutations and submit each permutation
+ * to the URLValidator for testing.  With each part of a component we have a boolean value, so if any part of our URL
+ * is false then we expect false to return, otherwise we expect true.
  */
 
 //import junit.framework.TestCase;
