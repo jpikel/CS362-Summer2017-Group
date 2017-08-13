@@ -31,7 +31,7 @@ public class TestURLprogramming {
 		 					new ResultPair("osu.edu", true),
 		 					new ResultPair("#awesome.org", false)};
 	 
-	 ResultPair[] ports = { new ResultPair(":80", true),
+	 ResultPair[] ports = { new ResultPair("", true),
 		 				new ResultPair(":81", true),
 		 				new ResultPair(":-80", false)};
 	 
@@ -59,6 +59,7 @@ public class TestURLprogramming {
     	int totalPerms = schemes.length * hostnames.length * ports.length * paths.length * queries.length;
     	int[] counters = {schemes.length, hostnames.length, ports.length, paths.length, queries.length};
     	int[] positions = {0,0,0,0,0};
+    	int count = 0;
     	for (int i = 0; i < totalPerms; i ++) {
     	    boolean expectedResult = true;
     	    StringBuffer urlBuffer = new StringBuffer();
@@ -81,12 +82,12 @@ public class TestURLprogramming {
     		if (result != expectedResult) {
     			System.out.print("\t TEST FAILED!");
     		}
+    		count += 1;
     		System.out.println();
     		positions[counters.length - 1] += 1;
     	}
-    	
+    	System.out.println(count);
 	}
 	
-
 }
  

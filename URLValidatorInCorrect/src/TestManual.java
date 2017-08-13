@@ -1,17 +1,16 @@
-/* Filename: TestInputPartitioning
+/* Filename: TestManual
  * Group Members: Akshay Subramanian, Edward Francis, Johannes Pikel
  * Class: CS362-400
  * Date: 2017.07.28
  * Assignment: Final Project Part B
- * Description: perform input partitioning such that the branches of the IF statements
- * in the isValid method of the UrlValidator are covered as much as possible.
+ * Description: perform manual testing of various URLs to the isVAlid method.
  * */
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class TestInputPartitioning {
+public class TestManual {
 
 	UrlValidator urlVal = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	
@@ -68,6 +67,10 @@ public class TestInputPartitioning {
 		url = "file:///www.google.com";
 		picker(urlVal.isValid(url), true, url);
 		url = "http://www.google.com:1024";
+		picker(urlVal.isValid(url), true, url);
+		url = "http://www.google.com:999";
+		picker(urlVal.isValid(url), true, url);
+		url = "http://www.google.com:10240";
 		picker(urlVal.isValid(url), true, url);
 		url = "http://www.google.com";
 		picker(urlVal.isValid(url), true, url);
