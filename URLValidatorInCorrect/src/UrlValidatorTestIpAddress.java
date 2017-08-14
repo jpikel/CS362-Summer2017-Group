@@ -1,3 +1,12 @@
+/* Filename: UrlValidatorTestIpAddress.java
+ * Group Members: Akshay Subramanian, Edward Francis, Johannes Pikel
+ * Class: CS362-400
+ * Date: 2017.08.14
+ * Assignment: Final Project Part B
+ * Description: This file contains tests that test the isValid method of the
+ * UrlValidator with IP addresses.
+ */
+
 /*
  * Licensed to the Apache Software Foundation (ASF) under one or more
  * contributor license agreements.  See the NOTICE file distributed with
@@ -24,12 +33,12 @@ import junit.framework.TestCase;
  *
  * @version $Revision: 1128446 $ $Date: 2011-05-27 13:29:27 -0700 (Fri, 27 May 2011) $
  */
-public class UrlValidatorTest extends TestCase {
+public class UrlValidatorTestIpAddress extends TestCase {
 
    private boolean printStatus = false;
    private boolean printIndex = false;//print index that indicates current scheme,host,port,path, query test were using.
 
-   public UrlValidatorTest(String testName) {
+   public UrlValidatorTestIpAddress(String testName) {
       super(testName);
    }
 
