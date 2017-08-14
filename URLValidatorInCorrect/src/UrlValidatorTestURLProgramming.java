@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class TestURLprogramming {
+public class UrlValidatorTestURLProgramming {
 	
 	/* this is the list of possible URL components that we will put together */
 	/* also referenced https://tools.ietf.org/html/rfc3986 */

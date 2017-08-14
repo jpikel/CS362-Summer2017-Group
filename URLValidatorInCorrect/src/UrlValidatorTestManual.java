@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class TestManual {
+public class UrlValidatorTestManual {
 
 	UrlValidator urlVal = new UrlValidator(null, null, UrlValidator.ALLOW_ALL_SCHEMES);
 	
