@@ -3,8 +3,8 @@
  * Class: CS362-400
  * Date: 2017.08.14
  * Assignment: Final Project Part B
- * Description: This file contains tests that test the isValid method of the
- * UrlValidator with IP addresses.
+ * Description: This file contains tests that passes IP address to
+ * the isValid method of the UrlValidator.
  */
 
 /*
